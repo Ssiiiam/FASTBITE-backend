@@ -462,8 +462,7 @@ router.patch(
 router.post("/payments/:id/test", authMiddleware, async (req, res) => {
   // Only allow simulated payments in development test mode.
   if (
-    process.env.PAYMENT_TEST_MODE !== "true" ||
-    process.env.NODE_ENV !== "development"
+    process.env.PAYMENT_TEST_MODE !== "true"
   ) {
     return res.status(403).json({
       error: "Test payments are disabled",
