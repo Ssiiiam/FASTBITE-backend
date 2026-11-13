@@ -80,7 +80,9 @@ router.get("/tables/:id/qr", async (req, res) => {
 
     const table = result.rows[0];
 
-    const menuUrl = `http://localhost:5173/menu?table=${table.qr_token}`;
+    const frontendUrl = process.env.FRONTEND_URL || "http://localhost:5173";
+    const menuUrl = `${frontendUrl}/menu?
+    table = ${table.qr_token}`;
 
     const qrImage = await QRCode.toDataURL(menuUrl);
 
