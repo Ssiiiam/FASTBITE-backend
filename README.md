@@ -13,7 +13,7 @@ This repository contains the backend API built with Node.js and Express, using P
 - Product Management: Manage restaurant products and availability.
 - Shopping Cart: Handle customer cart operations.
 - Order Management: Create and manage restaurant orders.
-- Payment Integration: Payment processing with Zarinpal test/sandbox configuration.
+- Payment System: A simulated payment system for playing the role of a real one.
 - Table Management: Manage restaurant tables and QR codes.
 - Staff Management: Support staff-related operations.
 - Image Uploads: Store and serve product images.
